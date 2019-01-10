@@ -1,0 +1,245 @@
+@import url("reset.css");
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    background: url("./imgs/download.jpg");
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    margin: auto;
+    min-height: 100%;
+    height: auto !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    }
+    h1,
+    h2,
+    h3,
+    p {
+        margin-bottom: 18px;
+    }
+
+    h2,
+    h3 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+
+    }
+
+    #masthead {
+        position: fixed;
+        z-index: 99;
+        width: auto;
+        margin: auto;
+        overflow: auto;
+        color: white;
+    background: white;
+    border-bottom: 2px solid gray;
+    }
+#logo {
+    float: left;
+    width: 230px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 80px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: teal;
+}
+nav {
+    float: right;
+    margin-top: 20px;
+}
+nav li {
+    display: inline-block;
+    padding-left: 12px;
+    margin-left: 12px;
+    line-height: 15px;
+    border-left: 1px solid white;
+}
+nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+footer,
+.push {
+    height: 100px;
+}
+footer {
+    padding: 28px;
+    clear: both;
+    font-size: 10px;
+    color: gray;
+    text-align: center;
+    background: #666;
+    border-top: 6px solid teal;
+}
+.sidebar {
+    float: right;
+    width: 100%;
+    max-width: 270px;
+    padding: 30px;
+    margin-bottom: 18px;
+    background: white;
+    border: 1px solid white;
+}
+h3,
+.sidebar h2 {
+    padding-bottom: 18px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    border-bottom: 2px solid whitesmoke;
+}
+.sidebar li {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.sidebar img {
+    max-width: 100%;
+}
+main {
+    padding-top: 130px;
+}
+
+.main-section {
+    float: left;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    margin:0 0 40px;
+    background: white;
+    border: 1px solid lightgrey;
+}
+.work {
+    position: relative;
+    float: left;
+    width: 270px;
+    margin: 20px 0 25px;
+    overflow: auto;
+}
+.work img {
+    width: 100%;
+    border: 0 none;
+}
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    background: teal;
+}
+.auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+#contact-form ul {
+    margin-bottom: 20px;
+}
+#contact-form li {
+    margin-bottom: 10px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid gray;
+}
+textarea {
+    height: 200px;
+}
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background: teal;
+    border: 0 none;
+}
+@media only screen and (max-width: 768px) {
+    .main-section,
+    .sidebar {
+        max-width: 100%;
+    }
+    main {
+        overflow: auto;
+    }
+    .work {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+    .auth-image {
+        width: 50%;
+    }
+    .sidebar {
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #masthead {
+        position: static;
+        margin-bottom: 20px;
+    }
+    header .container {
+        padding: 0;
+    }
+    main.container {
+        padding-top: 0;
+    }
+    #logo,
+    .work,
+    .auth-image {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+    nav a {
+        width: 30%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
